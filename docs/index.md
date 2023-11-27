@@ -15,13 +15,13 @@ You can also use SQL to maintain and optimize database performance.
 
 ## Some of The Most Important SQL Commands
 ```SQL
-SELECT - extracts data from a database<br />
-UPDATE - updates data in a database<br />
-DELETE - deletes data from a database<br />
-INSERT INTO - inserts new data into a database<br />
-CREATE DATABASE - creates a new database<br />
-ALTER DATABASE - modifies a database<br />
-CREATE TABLE - creates a new table<br />
+SELECT ( extracts data from a database )<br />
+UPDATE ( updates data in a database )  <br />
+DELETE ( deletes data from a database ) <br />
+INSERT INTO () inserts new data into a database _<br />
+CREATE DATABASE (- creates a new database ) <br />
+ALTER DATABASE ( modifies a database) <br />
+CREATE TABLE (creates a new table ) <br />
 ALTER TABLE - modifies a table<br />
 DROP TABLE - deletes a table<br />
 CREATE INDEX - creates an index (search key)<br />
@@ -39,7 +39,7 @@ DROP INDEX - deletes an index<br />
 ## Guides
 
 - ### General-Learning-Resources
-    [Link-to-SQLShack](https://www.sqlshack.com/learn-sql-sql-query-practice/)
+    - [Link-to-SQLShack](https://www.sqlshack.com/learn-sql-sql-query-practice/)
 
 - ### Labs/Practice SQL using free learning labs
     - [Link-to-W3-Schools](https://www.w3schools.com/sql/sql_exercises.asp)
