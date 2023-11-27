@@ -29,6 +29,10 @@ Then the database engineer links the product table to the color table with the C
 | Color 2  | Red        |
 
 
+| Name    | Link     | Category | Description |
+| ------- | -------- | -------- | ----------- |
+
+
 ###### SQL statements
 SQL statements, or SQL queries, are valid instructions that relational database management systems understand. Software developers build SQL statements by using different SQL language elements. SQL language elements are components such as identifiers, variables, and search conditions that form a correct SQL statement.
 
