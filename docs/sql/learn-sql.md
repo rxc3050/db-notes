@@ -1,6 +1,6 @@
 # SQL Docs
 
-#### What is SQL 
+### What is SQL 
 
 Structured query language (SQL) is a programming language for storing and 
 processing information in a relational database. A relational database stores 
@@ -10,7 +10,7 @@ You can use SQL statements to store, update, remove, search, and retrieve inform
 You can also use SQL to maintain and optimize database performance.
 
 ---------------------------------------------------------------------------------------------
-#### What are the components of a SQL system?
+### What are the components of a SQL system?
 Relational database management systems use structured query language (SQL) to store and manage data. The system stores multiple database tables that relate to each other. MS SQL Server, MySQL, or MS Access are examples of relational database management systems. The following are the components of such a system. 
 
 SQL table
@@ -18,37 +18,17 @@ A SQL table is the basic element of a relational database. The SQL database tabl
 
 For example, the database engineer creates a SQL table for products in a store: 
 
-Product ID
+| Product ID | Product Name | Color ID |
 
-Product Name
+| 0001       | Mattress     | Color 1 |
 
-Color ID
-
-0001
-
-Mattress
-
-Color 1
-
-0002
-
-Pillow
-
-Color 2
+| 0002       | Pillow       | Color 2 |
 
 Then the database engineer links the product table to the color table with the Color ID:
 
-Color ID
-
-Color Name
-
-Color 1
-
-Blue
-
-Color 2
-
-Red
+| Color ID | Color Name | 
+| Color 1  | Blue   | 
+|Color 2 | Red  |
 
 
 ###### SQL statements
@@ -64,7 +44,7 @@ VALUES(‘A’,’499’);
 Stored procedures are a collection of one or more SQL statements stored in the relational database. Software developers use stored procedures to improve efficiency and performance. For example, they can create a stored procedure for updating sales tables instead of writing the same SQL statement in different applications. 
 
 ---------------------------------------------------------------------------------------------
-#### How does SQL work?
+### How does SQL work?
 Structured query language (SQL) implementation involves a server machine that processes the database queries and returns the results. The SQL process goes through several software components, including the following. 
 
 ###### Parser
@@ -83,7 +63,7 @@ The relational engine, or query processor, creates a plan for retrieving, writin
 The storage engine, or database engine, is the software component that processes the byte code and runs the intended SQL statement. It reads and stores the data in the database files on physical disk storage. Upon completion, the storage engine returns the result to the requesting application.
 
 ---------------------------------------------------------------------------------------------
-#### What are SQL commands?
+### What are SQL commands?
 Structured query language (SQL) commands are specific keywords or SQL statements that developers use to manipulate the data stored in a relational database. You can categorize SQL commands as follows.
 
 ###### Data definition language 
@@ -102,6 +82,7 @@ Database administrators use data control language (DCL) to manage or authorize d
 The relational engine uses transaction control language (TCL) to automatically make database changes. For example, the database uses the ROLLBACK command to undo an erroneous transaction.
 
 
+---------------------------------------------------------------------------------------------
 ###### What is MySQL?
 
 MySQL is an open-source relational database management system offered by Oracle. 
@@ -116,18 +97,18 @@ While SQL commands are defined by international standards,
 the MySQL software undergoes continual upgrades and improvements.
 
 
-
+---------------------------------------------------------------------------------------------
 ###### How to get started with SQL
 
+
+---------------------------------------------------------------------------------------------
 ###### What is a SQL server?
 
 SQL Server is the official name of Microsoft's relational database management system 
 that manipulates data with SQL. The MS SQL Server has several editions, 
 and each is designed for specific workloads and requirements.
 
-
-###### Next
-
+---------------------------------------------------------------------------------------------
 
 ###### example-table
 

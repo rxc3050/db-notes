@@ -7,6 +7,8 @@ nav:
   - SQL: 
     - Learn-SQL: sql/learn-sql.md
     - SQL-Learning-Resources: sql/learning-resources.md
+    - SQL-COMMANDS: sql/sql-commands.md
+    - Example-table: sql/example-table.md
 
   # MongoDB related docs
   - MongoDB: 
