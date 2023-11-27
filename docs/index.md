@@ -3,7 +3,7 @@
 
 ## SQL 
 
-- [Learn-SQL](/sql/learn-sql.md)
+- [Learn-SQL](sql/learn-sql.md)
 
 ## MongoDB
 

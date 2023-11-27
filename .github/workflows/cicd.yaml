@@ -21,7 +21,6 @@ jobs:
         with:
           python-version: 3.x
 
-
       - name: setup actions
         uses: actions/cache@v2
         with:
@@ -31,7 +30,6 @@ jobs:
 
       - name: install dependencies for mkdocs
         run: pip install mkdocs-material mkdocs-bootswatch mkdocs-dracula-theme
-        # run: pip install mkdocs-bootswatch
 
 
       - name: deploy command
