@@ -19,16 +19,14 @@ A SQL table is the basic element of a relational database. The SQL database tabl
 For example, the database engineer creates a SQL table for products in a store: 
 
 | Product ID | Product Name | Color ID |
-
-| 0001       | Mattress     | Color 1 |
-
-| 0002       | Pillow       | Color 2 |
+| 0001       | Mattress     | Color 1  |
+| 0002       | Pillow       | Color 2  |
 
 Then the database engineer links the product table to the color table with the Color ID:
 
 | Color ID | Color Name | 
-| Color 1  | Blue   | 
-|Color 2 | Red  |
+| Color 1  | Blue       | 
+| Color 2  | Red        |
 
 
 ###### SQL statements
