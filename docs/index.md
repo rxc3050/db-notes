@@ -26,25 +26,23 @@ DROP TABLE - deletes a table<br />
 CREATE INDEX - creates an index (search key)<br />
 DROP INDEX - deletes an index<br />
 
-## Links 
+## Pages 
 - [Link-for-Learn-SQL](sql/learn-sql.md)
 
 - [Link-for-SQL-Learning-Resources](sql/learning-resources.md)
 
-- [SQL-Commands]{sql/sql-commands.md}
+- [SQL-Commands](sql/sql-commands.md)
 
 
-## Practice SQL using labs
+## Guides
 
-- [Link-to-W3-Schools](https://www.w3schools.com/sql/sql_exercises.asp)
-- [Link-to-SQL-HackerRack](https://www.hackerrank.com/domains/sql)
-- 
+- ## General-Learning-Resources
+    [Link-to-SQLShack](https://www.sqlshack.com/learn-sql-sql-query-practice/)
 
-
-## Guides/Example Queries
-
-- [Link-to-SQLShack](https://www.sqlshack.com/learn-sql-sql-query-practice/)
-
+- ## Labs/Practice SQL using free learning labs
+    - [Link-to-W3-Schools](https://www.w3schools.com/sql/sql_exercises.asp)
+    - [Link-to-SQL-HackerRack](https://www.hackerrank.com/domains/sql)
+    - 
 
 ## MongoDB
 
