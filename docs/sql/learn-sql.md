@@ -13,7 +13,7 @@ You can also use SQL to maintain and optimize database performance.
 ### What are the components of a SQL system?
 Relational database management systems use structured query language (SQL) to store and manage data. The system stores multiple database tables that relate to each other. MS SQL Server, MySQL, or MS Access are examples of relational database management systems. The following are the components of such a system. 
 
-SQL table
+###### SQL table
 A SQL table is the basic element of a relational database. The SQL database table consists of rows and columns. Database engineers create relationships between multiple database tables to optimize data storage space.
 
 For example, the database engineer creates a SQL table for products in a store: 
@@ -31,10 +31,6 @@ Then the database engineer links the product table to the color table with the C
 | Color 2  | Red        |
 
 
-| Name    | Link     | Category | Description |
-| ------- | -------- | -------- | ----------- |
-
-
 ###### SQL statements
 SQL statements, or SQL queries, are valid instructions that relational database management systems understand. Software developers build SQL statements by using different SQL language elements. SQL language elements are components such as identifiers, variables, and search conditions that form a correct SQL statement.
 
@@ -48,7 +44,7 @@ VALUES(‘A’,’499’);
 Stored procedures are a collection of one or more SQL statements stored in the relational database. Software developers use stored procedures to improve efficiency and performance. For example, they can create a stored procedure for updating sales tables instead of writing the same SQL statement in different applications. 
 
 ---------------------------------------------------------------------------------------------
-### How does SQL work?
+### **How does SQL work?**
 Structured query language (SQL) implementation involves a server machine that processes the database queries and returns the results. The SQL process goes through several software components, including the following. 
 
 ###### Parser
