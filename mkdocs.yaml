@@ -4,10 +4,13 @@ nav:
   - Home: index.md
 
   # SQl Related Docs
-  - SQL: sql/learn-sql.md
+  - SQL: 
+    - Learn-SQL: sql/learn-sql.md
+    - SQL-Learning-Resources: sql/learning-resources.md
 
   # MongoDB related docs
-  - MongoDB: MongoDB/learn-mongodb.md
+  - MongoDB: 
+    - Learn-MongoDB: mongodb/learn-mongodb.md
 
 
 # Themes related code
