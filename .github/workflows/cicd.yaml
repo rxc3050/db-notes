@@ -1,17 +1,16 @@
-name: deploy-db-notes
+name: deploy-db-notes 
 
 on:
-  push: 
+  push:
     branches: 
       - main
 
-permissions: 
+permissions:
   contents: write
-
-
+  
 jobs:
   deploy:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
