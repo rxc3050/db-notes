@@ -31,6 +31,8 @@ DROP INDEX - deletes an index
 
 - [Link-for-SQL-Learning-Resources](sql/learning-resources.md)
 
+- [SQL-Commands]{sql/sql-commands.md}
+
 
 ## Practice SQL using labs
 
