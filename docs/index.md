@@ -14,17 +14,17 @@ You can also use SQL to maintain and optimize database performance.
 
 
 ## Some of The Most Important SQL Commands
-SELECT - extracts data from a database\
-UPDATE - updates data in a database\
-DELETE - deletes data from a database\
-INSERT INTO - inserts new data into a database\
-CREATE DATABASE - creates a new database\
-ALTER DATABASE - modifies a database\
-CREATE TABLE - creates a new table\
-ALTER TABLE - modifies a table\
-DROP TABLE - deletes a table\
-CREATE INDEX - creates an index (search key)\
-DROP INDEX - deletes an index\
+SELECT - extracts data from a database<br />
+UPDATE - updates data in a database<br />
+DELETE - deletes data from a database<br />
+INSERT INTO - inserts new data into a database<br />
+CREATE DATABASE - creates a new database<br />
+ALTER DATABASE - modifies a database<br />
+CREATE TABLE - creates a new table<br />
+ALTER TABLE - modifies a table<br />
+DROP TABLE - deletes a table<br />
+CREATE INDEX - creates an index (search key)<br />
+DROP INDEX - deletes an index<br />
 
 ## Links 
 - [Link-for-Learn-SQL](sql/learn-sql.md)
