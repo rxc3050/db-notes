@@ -1,0 +1,35 @@
+name: deploy-db-notes
+
+on:
+  push: 
+    branches: 
+      - main
+
+permissions: 
+  contents: write
+
+
+jobs:
+  deploy: 
+    runs-on: ubuntu_latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+    - name: setup actions
+      uses: actions/cache@v2
+      with: 
+        key: ${{github.ref}}
+        path: .cache
+
+
+    - name: setup python
+      uses: actions/setup-python@v4
+      with:
+        python_version: 3.x
+
+    - name: install dependencies for mkdocs
+      run: pip install mkdocs-material mkdocs-bootswatch mkdocs-dracula-theme
+
+    - name: deploy 
+      run: mkdocs gh-deploy --force 

@@ -1,0 +1,25 @@
+site_name: DB-Notes
+
+nav: 
+  - Home: index.md
+
+
+  # SQl Related Docs
+  - SQL: /sql/learn-sql.md
+
+  # MongoDB related docs
+  - MongoDB: /MongoDB/learn-mongodb.md
+
+
+
+
+# Themes related code
+
+theme: dracula
+# site_favicon: favicon.ico
+
+# theme: pulse
+# # site_favicon: favicon.ico
+
+theme: material
+# site_favicon: favicon.ico
