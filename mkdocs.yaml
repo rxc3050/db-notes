@@ -3,7 +3,6 @@ site_name: DB-Notes
 nav: 
   - Home: index.md
 
-
   # SQl Related Docs
   - SQL: /sql/learn-sql.md
 
