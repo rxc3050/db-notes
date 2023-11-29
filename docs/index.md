@@ -58,4 +58,4 @@ DROP INDEX - deletes an index<br />
 
 ###### example-table
 
-- [example-table](example-table.md)
+- [example-table](sql/example-table.md)

@@ -17,14 +17,14 @@ nav:
 
 # Themes related code
 
+theme: lux
+# site_favicon: favicon.ico
+
 # theme: dracula
 # # site_favicon: favicon.ico
 
 # theme: pulse
 # # site_favicon: favicon.ico
-
-theme: lux
-# site_favicon: favicon.ico
 
 # theme: material
 # # site_favicon: favicon.ico
