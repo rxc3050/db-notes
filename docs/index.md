@@ -1,7 +1,8 @@
-# DB-NOTES
+# DB-Notes
 
+---------------------------------------------------------------------------------------------
 
-## SQL 
+### SQL 
 
 -->What is SQL 
 
@@ -28,6 +29,7 @@ CREATE INDEX - creates an index (search key)<br />
 DROP INDEX - deletes an index<br />
 ```
 
+---------------------------------------------------------------------------------------------
 ## Pages 
 - [Link-for-Learn-SQL](sql/learn-sql.md)
 
@@ -36,6 +38,7 @@ DROP INDEX - deletes an index<br />
 - [SQL-Commands](sql/sql-commands.md)
 
 
+---------------------------------------------------------------------------------------------
 ## Guides
 
 - ### General-Learning-Resources
@@ -46,10 +49,12 @@ DROP INDEX - deletes an index<br />
     - [Link-to-SQL-HackerRack](https://www.hackerrank.com/domains/sql)
     - 
 
+---------------------------------------------------------------------------------------------
 ## MongoDB
 
 - [MongoDB](mongodb/learn-mongodb.md)
 
+---------------------------------------------------------------------------------------------
 
 ###### example-table
 

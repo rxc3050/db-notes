@@ -20,7 +20,10 @@ nav:
 # theme: dracula
 # # site_favicon: favicon.ico
 
-theme: pulse
+# theme: pulse
+# # site_favicon: favicon.ico
+
+theme: lux
 # site_favicon: favicon.ico
 
 # theme: material
