@@ -17,11 +17,11 @@ nav:
 
 # Themes related code
 
-theme: dracula
-# site_favicon: favicon.ico
-
-# theme: pulse
+# theme: dracula
 # # site_favicon: favicon.ico
+
+theme: pulse
+# site_favicon: favicon.ico
 
 # theme: material
 # # site_favicon: favicon.ico
