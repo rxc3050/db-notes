@@ -4,7 +4,9 @@
 ## Practice SQL using labs
 - [W3-Schools](https://www.w3schools.com/sql/sql_exercises.asp)
 - [SQL-HackerRack](https://www.hackerrank.com/domains/sql)
-- 
+- [DataLemur](https://datalemur.com/)
+- [SQLBot](https://sqlbolt.com/)
+- [StrataScratch](https://www.stratascratch.com/)
 
 
 ## Guides/Example Queries
