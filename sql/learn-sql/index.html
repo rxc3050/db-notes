@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../site-favicon.ico">
+        
+        <title>Learn-SQL - DB-Notes</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/color-brewer.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">DB-Notes</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SQL <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Learn-SQL</a>
+</li>
+                                    
+<li>
+    <a href="../learning-resources/" class="dropdown-item">SQL-Learning-Resources</a>
+</li>
+                                    
+<li>
+    <a href="../sql-commands/" class="dropdown-item">SQL-COMMANDS</a>
+</li>
+                                    
+<li>
+    <a href="../example-table/" class="dropdown-item">Example-table</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">MongoDB <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../mongodb/learn-mongodb/" class="dropdown-item">Learn-MongoDB</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../.." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../learning-resources/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#sql-docs" class="nav-link">SQL Docs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="sql-docs">SQL Docs</h1>
+<h3 id="what-is-sql">What is SQL</h3>
+<p>Structured query language (SQL) is a programming language for storing and 
+processing information in a relational database. A relational database stores 
+information in tabular form, with rows and columns representing different 
+data attributes and the various relationships between the data values. 
+You can use SQL statements to store, update, remove, search, and retrieve information from the database. 
+You can also use SQL to maintain and optimize database performance.</p>
+<hr />
+<h3 id="what-are-the-components-of-a-sql-system">What are the components of a SQL system?</h3>
+<p>Relational database management systems use structured query language (SQL) to store and manage data. The system stores multiple database tables that relate to each other. MS SQL Server, MySQL, or MS Access are examples of relational database management systems. The following are the components of such a system. </p>
+<h6 id="sql-table">SQL table</h6>
+<p>A SQL table is the basic element of a relational database. The SQL database table consists of rows and columns. Database engineers create relationships between multiple database tables to optimize data storage space.</p>
+<p>For example, the database engineer creates a SQL table for products in a store: </p>
+<table>
+<thead>
+<tr>
+<th>Product ID</th>
+<th>Product Name</th>
+<th>Color ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0001</td>
+<td>Mattress</td>
+<td>Color 1</td>
+</tr>
+<tr>
+<td>0002</td>
+<td>Pillow</td>
+<td>Color 2</td>
+</tr>
+</tbody>
+</table>
+<p>Then the database engineer links the product table to the color table with the Color ID:</p>
+<table>
+<thead>
+<tr>
+<th>Color ID</th>
+<th>Color Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Color 1</td>
+<td>Blue</td>
+</tr>
+<tr>
+<td>Color 2</td>
+<td>Red</td>
+</tr>
+</tbody>
+</table>
+<h6 id="sql-statements">SQL statements</h6>
+<p>SQL statements, or SQL queries, are valid instructions that relational database management systems understand. Software developers build SQL statements by using different SQL language elements. SQL language elements are components such as identifiers, variables, and search conditions that form a correct SQL statement.</p>
+<p>For example, the following SQL statement uses a SQL INSERT command to store Mattress Brand A, priced $499, into a table named Mattress_table, with column names brand_name and cost:</p>
+<p>INSERT INTO Mattress_table (brand_name, cost)</p>
+<p>VALUES(‘A’,’499’);</p>
+<h6 id="stored-procedures">Stored procedures</h6>
+<p>Stored procedures are a collection of one or more SQL statements stored in the relational database. Software developers use stored procedures to improve efficiency and performance. For example, they can create a stored procedure for updating sales tables instead of writing the same SQL statement in different applications. </p>
+<hr />
+<h3 id="how-does-sql-work"><strong>How does SQL work?</strong></h3>
+<p>Structured query language (SQL) implementation involves a server machine that processes the database queries and returns the results. The SQL process goes through several software components, including the following. </p>
+<h6 id="parser">Parser</h6>
+<p>The parser starts by tokenizing, or replacing, some of the words in the SQL statement with special symbols. It then checks the statement for the following:</p>
+<h6 id="correctness">Correctness</h6>
+<p>The parser verifies that the SQL statement conforms to SQL semantics, or rules, that ensure the correctness of the query statement. For example, the parser checks if the SQL command ends with a semi-colon. If the semi-colon is missing, the parser returns an error.</p>
+<h6 id="authorization">Authorization</h6>
+<p>The parser also validates that the user running the query has the necessary authorization to manipulate the respective data. For example, only admin users might have the right to delete data. </p>
+<h6 id="relational-engine">Relational engine</h6>
+<p>The relational engine, or query processor, creates a plan for retrieving, writing, or updating the corresponding data in the most effective manner. For example, it checks for similar queries, reuses previous data manipulation methods, or creates a new one. It writes the plan in an intermediate-level representation of the SQL statement called byte code. Relational databases use byte code to efficiently perform database searches and modifications. </p>
+<h6 id="storage-engine">Storage engine</h6>
+<p>The storage engine, or database engine, is the software component that processes the byte code and runs the intended SQL statement. It reads and stores the data in the database files on physical disk storage. Upon completion, the storage engine returns the result to the requesting application.</p>
+<hr />
+<h3 id="what-are-sql-commands">What are SQL commands?</h3>
+<p>Structured query language (SQL) commands are specific keywords or SQL statements that developers use to manipulate the data stored in a relational database. You can categorize SQL commands as follows.</p>
+<h6 id="data-definition-language">Data definition language</h6>
+<p>Data definition language (DDL) refers to SQL commands that design the database structure. Database engineers use DDL to create and modify database objects based on the business requirements. For example, the database engineer uses the CREATE command to create database objects such as tables, views, and indexes.</p>
+<h6 id="data-query-language">Data query language</h6>
+<p>Data query language (DQL) consists of instructions for retrieving data stored in relational databases. Software applications use the SELECT command to filter and return specific results from a SQL table. </p>
+<h6 id="data-manipulation-language">Data manipulation language</h6>
+<p>Data manipulation language (DML) statements write new information or modify existing records in a relational database. For example, an application uses the INSERT command to store a new record in the database.</p>
+<h6 id="data-control-language">Data control language</h6>
+<p>Database administrators use data control language (DCL) to manage or authorize database access for other users. For example, they can use the GRANT command to permit certain applications to manipulate one or more tables. </p>
+<h6 id="transaction-control-language">Transaction control language</h6>
+<p>The relational engine uses transaction control language (TCL) to automatically make database changes. For example, the database uses the ROLLBACK command to undo an erroneous transaction.</p>
+<hr />
+<h6 id="what-is-mysql">What is MySQL?</h6>
+<p>MySQL is an open-source relational database management system offered by Oracle. 
+Developers can download and use MySQL without paying a licensing fee. 
+They can install MySQL on different operating systems or cloud servers. 
+MySQL is a popular database system for web applications. </p>
+<p>SQL vs. MySQL
+Structured query language (SQL) is a standard language for database creation and manipulation. 
+MySQL is a relational database program that uses SQL queries. 
+While SQL commands are defined by international standards, 
+the MySQL software undergoes continual upgrades and improvements.</p>
+<hr />
+<h6 id="how-to-get-started-with-sql">How to get started with SQL</h6>
+<hr />
+<h6 id="what-is-a-sql-server">What is a SQL server?</h6>
+<p>SQL Server is the official name of Microsoft's relational database management system 
+that manipulates data with SQL. The MS SQL Server has several editions, 
+and each is designed for specific workloads and requirements.</p>
+<hr />
+<h6 id="example-table">example-table</h6>
+<ul>
+<li><a href="../example-table/">example-table</a></li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
