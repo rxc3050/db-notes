@@ -19,6 +19,7 @@ nav:
 
 theme: lux
 # site_favicon: favicon.ico
+site_favicon: site-favicon.ico
 
 # theme: dracula
 # # site_favicon: favicon.ico
